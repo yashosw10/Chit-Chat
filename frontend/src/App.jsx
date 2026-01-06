@@ -6,6 +6,10 @@ import { useState } from "react";
 
 
 function App() {
+  const {authUser, isLoading, login} = useAuthStore();
+  console.log("")
+
+
   const [myName, setMyName] = useState("Yasho");
   return (
     <div className="min-h-screen bg-slate-900 relative flex items-center justify-center p-4 overflow-hidden">
